@@ -1,6 +1,6 @@
 <div>Campaign</div>
 <h5>Balance: 10 ETH</h5>
-<p>Account: {{connectedAccount}}</p>
+<p>Account: {{connectedAccount ? connectedAccount : 'Not Connected'}}</p>
 <button type="button" class="btn" (click)="connectToMetamask()">Connect To Metamask</button>
 <button type="button" class="btn">Transfer</button>
 <button type="button" class="btn">Withdraw</button>
